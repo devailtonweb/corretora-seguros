@@ -59,6 +59,19 @@
   font-weight: normal;
   font-style: normal
 }
+/* --------------------------
+:: Configuração do projeto
+-------------------------- */
+
+body {
+  font-family: 'omnes_regularregular', Tahoma, Geneva, Verdana, sans-serif !important;
+  background: #f5f5f5 !important;
+}
+
+.breadcrumb {
+  background-color: #FFF !important;
+  border-radius: 0 !important;
+}
 
 /* --------------------------
 :: Menu do projeto
@@ -92,4 +105,5 @@ nav.bg-default {
 
 h1, h2 {
   font-family: 'omnessemibold', Tahoma, Geneva, Verdana, sans-serif;
+  color: #58595B;
 }

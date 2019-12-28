@@ -4,19 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './shared/menu/menu.component';
-import { PageHeaderComponent } from './shared/page-header/page-header.component';
-import { PageBreadcrumbComponent } from './shared/page-breadcrumb/page-breadcrumb.component';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    PageHeaderComponent,
-    PageBreadcrumbComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
