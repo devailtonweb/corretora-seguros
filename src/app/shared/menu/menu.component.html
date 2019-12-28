@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-default mb-4 menu-cs">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/"><img src="./assets/logo-light-small.png" alt="Gestor Prime" class="mr-4"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cadastro
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/reports">Cliente</a>
+            <a class="dropdown-item" routerLink="/reports">Fornecedor</a>
+            <a class="dropdown-item" routerLink="/reports">Funcionário</a>
+            <a class="dropdown-item" routerLink="/reports">Corretoras</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lançamentos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/reports">Receita e Despesa</a>
+            <a class="dropdown-item" routerLink="/reports">Seguro</a>
+            <a class="dropdown-item" routerLink="/reports">Comissão</a>
+          </div>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/reports">Relatórios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/entries">Lançamentos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/categories">Categorias</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

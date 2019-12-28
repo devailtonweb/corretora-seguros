@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\clientes",
+    "\\src\\app\\pages\\clientes\\clientes-list",
+    "\\src\\app\\shared",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\shared\\page-header",
+  "PreviewInSolutionExplorer": false
+}
