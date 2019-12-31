@@ -71,6 +71,14 @@ body {
 .breadcrumb {
   background-color: #FFF !important;
   border-radius: 0 !important;
+  -webkit-box-shadow: 0 -2px 14px 0 rgba(0,0,0,.08);
+  box-shadow: 0 -2px 14px 0 rgba(0,0,0,.08);
+}
+
+table {
+  background: #FFFF;
+  -webkit-box-shadow: 0 6px 14px 0 rgba(0,0,0,.08);
+  box-shadow: 0 6px 14px 0 rgba(0,0,0,.08);
 }
 
 /* --------------------------
@@ -106,4 +114,16 @@ nav.bg-default {
 h1, h2 {
   font-family: 'omnessemibold', Tahoma, Geneva, Verdana, sans-serif;
   color: #58595B;
+}
+
+
+/* --------------------------
+:: Tabelas do projeto
+-------------------------- */
+.table .bg-table-default {
+  background: #58595b;
+}
+
+.table thead .bg-table-default th {
+  border-bottom: 0 !important;
 }

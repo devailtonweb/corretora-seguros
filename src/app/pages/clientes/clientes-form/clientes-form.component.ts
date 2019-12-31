@@ -26,6 +26,7 @@ export class ClientesFormComponent implements OnInit {
       if (data.clientes && data.key) {
         this.clientes = new Clientes();
         this.clientes.nome = data.clientes.nome;
+        this.clientes.celular = data.clientes.celular;
         this.clientes.observacao = data.clientes.observacao;
         this.key = data.key;
       }
@@ -51,8 +52,8 @@ export class ClientesFormComponent implements OnInit {
   }
 
   protected editionPageTitle(): string {
-    //const clienteName = this.resource.name || "";
-    return "Editar cliente: ";// + categoryName;
+    const clienteName = this.clientes.nome || "";
+    return "Editar cliente: " + clienteName;
   }
 
 }

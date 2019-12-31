@@ -9,7 +9,7 @@
 
 <!--[(clientes.nome)]-->
 
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()" class="mb-4">
   <div class="card">
     <div class="card-header">
       Informações sobre o cliente
@@ -17,13 +17,96 @@
 
     <div class="card-body">
       <div class="form-row">
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-12">
           <label for="name">Nome</label>
           <input type="text" class="form-control" name="name" [(ngModel)]="clientes.nome" autocomplete="off" placeholder="Ex.: Fernanda Silveira">
         </div>
-        <div class="form-group col-md-8">
-          <label for="description">Descrição</label>
-          <input type="text" class="form-control" name="observacao"  [(ngModel)]="clientes.observacao" autocomplete="off">
+        <div class="form-group col-md-6">
+          <label for="endereco">Endereço</label>
+          <input type="text" class="form-control" name="endereco" [(ngModel)]="clientes.endereco" autocomplete="off" placeholder="Ex.: Rua PH Rolfs">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" name="bairro" [(ngModel)]="clientes.bairro" autocomplete="off" placeholder="Ex.: Centro">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="complemento">Complemento</label>
+          <input type="text" class="form-control" name="complemento" [(ngModel)]="clientes.complemento" autocomplete="off" placeholder="Ex.: Apto02">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" name="cep" [(ngModel)]="clientes.cep" autocomplete="off" placeholder="Ex.: 36570300">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" name="cidade" [(ngModel)]="clientes.cidade" autocomplete="off" placeholder="Ex.: Viçosa">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="estado">Estado</label>
+          <select name="estado" [(ngModel)]="clientes.estado" class="form-control">
+            <option value="">-- Selecione o estado --</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="telefone">Telefone</label>
+          <input type="text" class="form-control" name="telefone" [(ngModel)]="clientes.telefone" autocomplete="off" placeholder="Ex.: 310003100">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="celular">Celular</label>
+          <input type="text" class="form-control" name="celular" [(ngModel)]="clientes.celular" autocomplete="off" placeholder="Ex.: 3199999999">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="email">E-mail</label>
+          <input type="text" class="form-control" name="email" [(ngModel)]="clientes.email" autocomplete="off" placeholder="Ex.: luisfelipe@gmail.com">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="tipo_documento">Tipo de documento</label>
+          <select name="tipo_documento" [(ngModel)]="clientes.tipo_documento" class="form-control" placeholder="-- Selecione o estado --">
+            <option value="default">-- Selecione o tipo de documento --</option>
+            <option value="cpf">CPF</option>
+            <option value="cnpj">CNPJ</option>
+            <option value="passaporte">Passaporte</option>
+            <option value="outro">Outro documento</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="documento">Documento</label>
+          <input type="text" class="form-control" name="documento" [(ngModel)]="clientes.documento" autocomplete="off" placeholder="Ex.: 99999999999">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="aniversario">Aniversário</label>
+          <input type="text" class="form-control" name="aniversario" [(ngModel)]="clientes.aniversario" autocomplete="off" placeholder="Ex.: 26/03/1987">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="observacao">Observação</label>
+          <textarea type="text" class="form-control" name="observacao" [(ngModel)]="clientes.observacao" autocomplete="off" placeholder="Ex.: Cliente pediu para ligar somente pela manhã!"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-lg float-right mt-3">
           Salvar
